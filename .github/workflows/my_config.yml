@@ -1,0 +1,14 @@
+name : Graded Project Action
+
+on :
+  push :
+    branches: [main]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/setup-python@v2
+      - uses: actions/checkout@v4
+      - run: pip install -r requirements.txt
