@@ -17,4 +17,4 @@ jobs:
         image: deepak2132/gradedproject
         registry: docker.io
         username: ${{ secrets.DOCKER_USERNAME}}
-        password: ${{ secrets.DOCKER_USERNAME}}
+        password: ${{ secrets.DOCKER_PASSWORD}}
